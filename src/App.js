@@ -34,7 +34,7 @@ const RecipeCard = ({ recipe }) => {
 const App = () => {
   return (
     <div className="app">
-      <h1>Food Recipe App</h1>
+      <h1>Food Magazine App</h1>
       <div className="recipe-container">
         {recipesData.map((recipe) => (
           <RecipeCard key={recipe.id} recipe={recipe} />
