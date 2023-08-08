@@ -69,7 +69,7 @@ const App = () => {
     setModalIsOpen(true);
     setEditingRecipe(null);
     setNewRecipe({
-      id: null,
+      id: Date.now(),
       image: "",
       name: "",
       description: "",
@@ -105,7 +105,7 @@ const App = () => {
 
   return (
     <div className="container">
-      <h1 className="mt-4">Food Magazine App</h1>
+      <h1 className="mt-4">Food Recipe App</h1>
       <div className="row mt-3">
         <div className="col-md-6">
           <input
@@ -155,7 +155,94 @@ const App = () => {
           </div>
           <div className="modal-body">
             <form>
-              {/* ... (previous form fields) */}
+              <div className="mb-3">
+                <label className="form-label">Name:</label>
+                <input
+                  type="text"
+                  className="form-control"
+                  value={editingRecipe ? editingRecipe.name : newRecipe.name}
+                  onChange={(e) =>
+                    editingRecipe
+                      ? setEditingRecipe({
+                          ...editingRecipe,
+                          name: e.target.value,
+                        })
+                      : setNewRecipe({ ...newRecipe, name: e.target.value })
+                  }
+                />
+              </div>
+              <div className="mb-3">
+                <label className="form-label">Description:</label>
+                <textarea
+                  className="form-control"
+                  value={
+                    editingRecipe
+                      ? editingRecipe.description
+                      : newRecipe.description
+                  }
+                  onChange={(e) =>
+                    editingRecipe
+                      ? setEditingRecipe({
+                          ...editingRecipe,
+                          description: e.target.value,
+                        })
+                      : setNewRecipe({
+                          ...newRecipe,
+                          description: e.target.value,
+                        })
+                  }
+                />
+              </div>
+              <div className="mb-3">
+                <label className="form-label">Ingredients:</label>
+                <input
+                  type="text"
+                  className="form-control"
+                  value={
+                    editingRecipe
+                      ? editingRecipe.ingredients.join(", ")
+                      : newRecipe.ingredients.join(", ")
+                  }
+                  onChange={(e) =>
+                    editingRecipe
+                      ? setEditingRecipe({
+                          ...editingRecipe,
+                          ingredients: e.target.value.split(", "),
+                        })
+                      : setNewRecipe({
+                          ...newRecipe,
+                          ingredients: e.target.value.split(", "),
+                        })
+                  }
+                />
+              </div>
+              <div className="mb-3">
+                <label className="form-label">Image Upload:</label>
+                <input
+                  type="file"
+                  className="form-control"
+                  accept="image/*"
+                  onChange={(e) => {
+                    const file = e.target.files[0];
+                    const reader = new FileReader();
+                    reader.onload = (event) => {
+                      const uploadedImage = event.target.result;
+                      if (editingRecipe) {
+                        setEditingRecipe({
+                          ...editingRecipe,
+                          image: uploadedImage,
+                        });
+                      } else {
+                        setNewRecipe({
+                          ...newRecipe,
+                          image: uploadedImage,
+                        });
+                      }
+                    };
+                    reader.readAsDataURL(file);
+                  }}
+                />
+              </div>
               <button
                 type="button"
                 className="btn btn-secondary me-2"
