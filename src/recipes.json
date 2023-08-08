@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "name": "Pasta Carbonara",
+    "description": "Classic Italian pasta dish with eggs, cheese, and pancetta.",
+    "image": "/images/pasta carbonara.jpg",
+    "ingredients": [
+      "200g spaghetti",
+      "2 large eggs",
+      "100g Pecorino cheese",
+      "100g pancetta or guanciale",
+      "Salt and black pepper to taste"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Chicken Curry",
+    "description": "Delicious and flavorful chicken curry with spices.",
+    "image": "/images/chicken curry.jpg",
+    "ingredients": [
+      "500g chicken pieces",
+      "1 large onion",
+      "2 cloves garlic",
+      "1 can coconut milk",
+      "2 tablespoons curry powder",
+      "Salt and oil"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Chocolate Brownies",
+    "description": "Rich and fudgy chocolate brownies, perfect for dessert.",
+    "image": "/images/chocolate brownies.jpg",
+    "ingredients": [
+      "200g butter",
+      "200g dark chocolate",
+      "3 eggs",
+      "200g sugar",
+      "100g all-purpose flour",
+      "50g cocoa powder"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Caesar Salad",
+    "description": "Classic Caesar salad with romaine lettuce, croutons, and Caesar dressing.",
+    "image": "/images/caesar salad.jpg",
+    "ingredients": [
+      "1 head romaine lettuce",
+      "1 cup croutons",
+      "1/2 cup grated Parmesan cheese",
+      "Caesar dressing",
+      "Salt and black pepper to taste"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Margherita Pizza",
+    "description": "Classic Margherita pizza with tomato, mozzarella, and basil.",
+    "image": "/images/margherita pizza.jpg",
+    "ingredients": [
+      "1 pizza dough",
+      "1/2 cup tomato sauce",
+      "1 cup shredded mozzarella cheese",
+      "Fresh basil leaves",
+      "Salt and olive oil"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Sushi Rolls",
+    "description": "Assorted sushi rolls with fresh fish and vegetables.",
+    "image": "/images/Sushi Rolls.jpg",
+    "ingredients": [
+      "Sushi rice",
+      "Nori seaweed sheets",
+      "Assorted fish (salmon, tuna, etc.)",
+      "Cucumber",
+      "Avocado",
+      "Soy sauce and wasabi for serving"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Chicken Alfredo",
+    "description": "Creamy chicken Alfredo pasta with garlic and Parmesan cheese.",
+    "image": "/images/Chicken Alfredo.jpg",
+    "ingredients": [
+      "200g fettuccine pasta",
+      "2 boneless, skinless chicken breasts",
+      "2 cloves garlic",
+      "1 cup heavy cream",
+      "1 cup grated Parmesan cheese",
+      "Salt and black pepper to taste"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Fruit Smoothie",
+    "description": "Refreshing fruit smoothie with mixed berries and yogurt.",
+    "image": "/images/Fruit Smoothie.jpg",
+    "ingredients": [
+      "1 cup mixed berries (strawberries, blueberries, raspberries)",
+      "1 banana",
+      "1 cup yogurt",
+      "1 tablespoon honey",
+      "Ice cubes"
+    ]
+  }
+]
